@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+header {
+    /*background: url(../assets/img/header.webp);*/
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+.contenedor .contenedor-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+.contenedor .contenedor-items .item {
+    height: 370px;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.contenedor-items .item:hover {
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+
+.contenedor-items .item .titulo-item {
+    display: block;
+    /*white-space: pre-wrap;*/
+    height: 45px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+*/ .contenedor-items .item .titulo-item {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contenedor-items .item .nombre-item {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.contenedor-items .item .details-item {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.img-item {
+    width: auto;
+    max-height: 100%;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.center-button button {
+    width: 150px;
+    height: 40px;
+}

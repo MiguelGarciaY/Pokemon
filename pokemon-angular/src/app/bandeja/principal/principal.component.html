@@ -1,0 +1,20 @@
+<div class="center-table">
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" (window:resize)="onResize()"
+    [class.show]="showTable==true"  class="table row-border hover fade success">
+    <thead>
+        <tr>
+            <th>Pokemon</th>
+            <th>Detalle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pokemones of ListPokemones; index as i">
+            <td>{{pokemones.name}}</td>
+            <td>      
+                <button [routerLink]="['/detalle', pokemones.url]"
+                class="btn btn-primary">
+                Ver Detalles </button></td>
+        </tr>
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,5 @@
+{
+    "/api-pokemon/*":{
+        "target":"http://localhost:6435"        
+    }
+}
